@@ -15,7 +15,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-#Enter the topic for tweets
+#Enter the TARGET for tweets(edit your target in the below line)
 public_tweets = api.search("Putin")
 #creating emoty lists for classes 
 Pos = []
