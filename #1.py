@@ -23,9 +23,9 @@ Nue = []
 Neg = []
 #pull tweets and convert them to textblob format and classify them as POSITIVE, NUETRAL or NEGATIVE based on sentiment polarity value
 for tweet in public_tweets:
-    #print(tweet.text)
+    print(tweet.text)
     analysis = TextBlob(tweet.text)
-    #print(analysis.sentiment)
+    print(analysis.sentiment)
     if(analysis.sentiment.polarity > 0):
         Pos.append(analysis)
     elif(analysis.sentiment.polarity == 0):
